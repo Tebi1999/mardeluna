@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mar de Luna</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="./scripts/translate.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="iconosidiomas">
+            <img src="./img/ico-spa.png" alt="Español" onclick="cambiarIdioma('es')">
+            <img src="./img/ico-bra.png" alt="Portugues" onclick="cambiarIdioma('pt')">
+            <img src="./img/ico-ita.png" alt="Italiano" onclick="cambiarIdioma('it')">
+            <img src="./img/ico-eng.png" alt="English" onclick="cambiarIdioma('en')">
+            <img src="./img/ico-deu.png" alt="Deutsch" onclick="cambiarIdioma('de')">
+            <img src="./img/ico-fre.png" alt="Français" onclick="cambiarIdioma('fr')">
+        </div>
+        
+        <nav>
+            <a href="./index.html"><img src="./img/isologotipo-transparente.png" alt="Isologotipo de la marca"></a>
+            <ul class="menu">
+                <li><a href="index.html" data-translate="inicio">INICIO</a></li>
+                <li><a href="entradas.html" data-translate="entradas">ENTRADAS</a></li>
+                <li><a href="postres.html" data-translate="postres">POSTRES</a></li>
+                <li><a href="bebidas.html" data-translate="bebidas">BEBIDAS</a></li>
+                <li><a href="contacto.html" data-translate="contacto">CONTACTO</a></li>
+           </ul>
+        </nav>
+    </header> 
+
+    <main>
+        <h2 data-translate="platosTitulo">PLATOS</h2>
+        <div class="platos">
+            <article>
+                <img src="./img/Langostinos-1.jpg" alt="Langostinos"><br><br>
+                <h3 data-translate="langostinosTitulo">Langostinos con salsa de camarones</h3><br>
+                <p data-translate="langostinosDesc">Un plato exquisito de langostinos bañados en una salsa cremosa de camarones. Los langostinos jugosos se combinan con una salsa rica y suave, realzada con el sabor a mar de los camarones. Una delicia indulgente que deleitará los paladares más exigentes con su exquisita combinación de sabores marinos.</p><br>
+                <label>
+                    <input type="checkbox" name="langostinos" value="1">
+                    <span data-translate="seleccionarLangostinos">Seleccionar langostinos</span>
+                </label>
+                <label>
+                    <span data-translate="cantidad">Cantidad:</span>
+                    <input type="number" value="0" min="0" max="20">
+                </label>
+            </article>
+            <article>
+                <img src="./img/Mejillones-1.jpg" alt="Mejillones"><br><br>
+                <h3 data-translate="mejillonesTitulo">Mejillones al ajillo</h3><br>
+                <p data-translate="mejillonesDesc">Un plato vibrante de mejillones al ajillo, ofreciendo una explosión de sabores mediterráneos. Los mejillones frescos se cocinan en una salsa de ajo y aceite de oliva, impregnando cada bocado con su aroma y sabor intensos. Una experiencia culinaria irresistible que te transportará a las costas de España con cada mordisco.</p><br>
+                <label>
+                    <input type="checkbox" name="mejillones" value="2">
+                    <span data-translate="seleccionarMejillones">Seleccionar mejillones</span>
+                </label>
+                <label>
+                    <span data-translate="cantidad">Cantidad:</span>
+                    <input type="number" value="0" min="0" max="20">
+                </label>
+            </article>
+            <article>
+                <img src="./img/Rabas-1.jpg" alt="Rabas"><br><br>
+                <h3 data-translate="rabasTitulo">Rabas rebozadas</h3><br>
+                <p data-translate="rabasDesc">Deliciosas rabas rebozadas, crujientes por fuera y tiernas por dentro, acompañadas de una salsa de mostaza con un toque picante. El rebozado dorado resalta el sabor suave y jugoso de las rabas, mientras que la salsa de mostaza añade un toque audaz y delicioso. Un placer irresistible para los amantes de la cocina gourmet.</p><br>
+                <label>
+                    <input type="checkbox" name="rabas" value="3">
+                    <span data-translate="seleccionarRabas">Seleccionar rabas</span>
+                </label>
+                <label>
+                    <span data-translate="cantidad">Cantidad:</span>
+                    <input type="number" value="0" min="0" max="20">
+                </label>
+            </article>
+        </div>
+        
+        <a href="pedido.html" class="boton-flotante" data-translate="miPedido">Mi Pedido</a>
+    </main>
+<br><br>
+    <footer>© Todos los derechos reservados al Grupo 16</footer>
+    <script src="./js/traducciones.js"></script>
+</body>
+</html>

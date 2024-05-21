@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mar de Luna</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="iconosidiomas">
+            <img src="./img/ico-spa.png" alt="Español" onclick="cambiarIdioma('es')">
+            <img src="./img/ico-bra.png" alt="Portugues" onclick="cambiarIdioma('pt')">
+            <img src="./img/ico-ita.png" alt="Italiano" onclick="cambiarIdioma('it')">
+            <img src="./img/ico-eng.png" alt="English" onclick="cambiarIdioma('en')">
+            <img src="./img/ico-deu.png" alt="Deutsch" onclick="cambiarIdioma('de')">
+            <img src="./img/ico-fre.png" alt="Français" onclick="cambiarIdioma('fr')">
+        </div>
+                
+        <nav class="barra">
+            <a href="./index.html"><img src="./img/isologotipo-transparente.png" alt="Isologotipo de la marca" data-translate="alt-logo"></a>
+        
+            <ul class="menu">
+                <li><a href="index.html" data-translate="inicio">INICIO</a></li>
+                <li><a href="entradas.html" data-translate="entradas">ENTRADAS</a></li>
+                <li><a href="platos.html" data-translate="platos">PLATOS</a></li>
+                <li><a href="postres.html" data-translate="postres">POSTRES</a></li>
+                <li><a href="bebidas.html" data-translate="bebidas">BEBIDAS</a></li>
+                <li><a href="contacto.html" data-translate="contacto">CONTACTO</a></li>
+            </ul>
+        
+        </nav>
+    </header> 
+
+    <main>
+        <h2 data-translate="ordentitulo">MI PEDIDO</h2>
+
+        <h3 data-translate="mesanumero">Mesa numero: <input type="number"></h3><br>
+        <h3 data-translate="name">Nombre:<input type="text"></h3><br>
+        <br>
+        
+        <form action="" method="post">
+            <div class="contenedor">
+                <div class="etiqueta" data-translate="bebidaspedido">Bebidas</div>
+                <div class="borde">
+                    <p data-translate="bebidasseleccionadas">Aca iria lo que se selecciono de bebida</p>
+                </div>
+            </div>
+            <br>
+            <div class="contenedor">
+                <div class="etiqueta" data-translate="entradaspedido">Entradas</div>
+                <div class="borde">
+                    <p data-translate="entradasseleccionadas">Aca iria lo que se selecciono de entrada.</p>
+                </div>
+            </div>
+            <br>
+            <div class="contenedor">
+                <div class="etiqueta" data-translate="platospedidos">Platos</div>
+                <div class="borde">
+                    <p data-translate="platossleccionados">Aca iria lo que se selecciono de plato.</p>
+                </div>
+            </div>
+            <br>
+            <div class="contenedor">
+                <div class="etiqueta" data-translate="postrespedidos">Postres</div>
+                <div class="borde">
+                    <p data-translate="postresseleccionados">Aca iria lo que se selecciono de postre</p>
+                </div>
+            </div>
+            <br><br>
+        
+        </form>
+    
+        <div class="Boton"><button type="submit" data-translate="submit-order">Enviar Pedido</button></div>
+    
+    </main>
+
+    <br><br>
+
+    <footer data-translate="footer">© Todos los derechos reservados al Grupo 16</footer>
+    <script src="./js/traducciones.js"></script>
+</body>
+</html>

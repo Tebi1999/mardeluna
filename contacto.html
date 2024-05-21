@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="titulo">Mar de Luna</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <div class="iconosidiomas">
+            <img src="./img/ico-spa.png" alt="Español" onclick="cambiarIdioma('es')" data-translate="idiomaEspañol">
+            <img src="./img/ico-bra.png" alt="Português" onclick="cambiarIdioma('pt')" data-translate="idiomaPortugues">
+            <img src="./img/ico-ita.png" alt="Italiano" onclick="cambiarIdioma('it')" data-translate="idiomaItaliano">
+            <img src="./img/ico-eng.png" alt="English" onclick="cambiarIdioma('en')" data-translate="idiomaIngles">
+            <img src="./img/ico-deu.png" alt="Deutsch" onclick="cambiarIdioma('de')" data-translate="idiomaAleman">
+            <img src="./img/ico-fre.png" alt="Français" onclick="cambiarIdioma('fr')" data-translate="idiomaFrances">
+        </div>
+
+        <nav>
+
+            <a href="./index.html"><img src="./img/isologotipo-transparente.png" alt="Isologotipo de la marca"></a>
+
+            <ul class="menu">
+                <li><a href="index.html" data-translate="inicio">INICIO</a></li>
+                <li><a href="entradas.html" data-translate="entradas">ENTRADAS</a></li>
+                <li><a href="platos.html" data-translate="platos">PLATOS</a></li>
+                <li><a href="postres.html" data-translate="postres">POSTRES</a></li>
+                <li><a href="bebidas.html" data-translate="bebidas">BEBIDAS</a></li>
+            </ul>
+
+
+        </nav>
+    </header>
+    <br><br>
+    <main>
+
+
+        <form id="formContacto" method="POST">
+            <h2 data-translate="formularioContacto">Formulario de Contacto</h2>
+            <br><br>
+            <div>
+                <label for="nombre" data-translate="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+            <div>
+                <label for="email" data-translate="correoElectronico">Correo Electrónico:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="telefono" data-translate="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+            <div>
+                <label for="mensaje" data-translate="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+            </div>
+            <input type="submit" data-translate="enviar" value="Enviar">
+            <h2 id="rtaValidacion"></h2>
+        </form><br><br>
+
+        <h2 data-translate="ubicacion">Nuestra ubicacion:</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d72789.95748306708!2d-151.74016538915728!3d-16.498263065256285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1716139448678!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br><br>
+    </main>
+    <script src="./js/validacion.js"></script>
+    <script src="./js/traducciones.js"></script>
+
+    <footer>© Todos los derechos reservados al Grupo 16</footer>
+
+</body>
+
+</html>

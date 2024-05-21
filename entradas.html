@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mar de Luna</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="./scripts/translate.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="iconosidiomas">
+            <img src="./img/ico-spa.png" alt="Español" onclick="cambiarIdioma('es')">
+            <img src="./img/ico-bra.png" alt="Portugues" onclick="cambiarIdioma('pt')">
+            <img src="./img/ico-ita.png" alt="Italiano" onclick="cambiarIdioma('it')">
+            <img src="./img/ico-eng.png" alt="English" onclick="cambiarIdioma('en')">
+            <img src="./img/ico-deu.png" alt="Deutsch" onclick="cambiarIdioma('de')">
+            <img src="./img/ico-fre.png" alt="Français" onclick="cambiarIdioma('fr')">
+        </div>
+        
+        <nav>
+            <a href="./index.html"><img src="./img/isologotipo-transparente.png" alt="Isologotipo de la marca"></a>
+            <ul class="menu">
+                <li><a href="index.html" data-translate="inicio">INICIO</a></li>
+                <li><a href="platos.html" data-translate="platos">PLATOS</a></li>
+                <li><a href="postres.html" data-translate="postres">POSTRES</a></li>
+                <li><a href="bebidas.html" data-translate="bebidas">BEBIDAS</a></li>
+                <li><a href="contacto.html" data-translate="contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 data-translate="entradasTitulo">ENTRADAS</h2>
+        <div class="entradas">
+            <article>
+                <img src="./img/Brusquetas-1.jpg" alt="Brusquetas"><br><br>
+                <h3 data-translate="brusquetasTitulo">Bruschettas</h3><br>
+                <p data-translate="brusquetasDesc">Bruschettas con exquisita mezcla mediterránea de palta cremosa, queso crema suave, aceitunas negras jugosas y albahaca fresca. Una explosión de sabores y texturas en cada bocado, perfecta para abrir el apetito con un toque gourmet.</p><br>
+                <label>
+                    <input type="checkbox" name="brusquetas" value="1">
+                    <span data-translate="seleccionarBrusquetas">Seleccionar brusquetas</span>
+                </label>
+                <label>
+                    <span data-translate="cantidad">Cantidad:</span>
+                    <input type="number" value="0" min="0" max="20">
+                </label>
+            </article>
+            <article>
+                <img src="./img/Empanadas-1.jpg" alt="Empanadas"><br><br>
+                <h3 data-translate="empanadasTitulo">Empanadas de mariscos</h3><br>
+                <p data-translate="empanadasDesc">Empanadas de salmón, un festín marino en cada bocado. El jugoso salmón se combina con ingredientes selectos, envuelto en una masa dorada y crujiente. Un deleite para los amantes del pescado, ofreciendo un sabor ahumado y delicado en cada deliciosa mordida.</p><br>
+                <label>
+                    <input type="checkbox" name="empanadas" value="2">
+                    <span data-translate="seleccionarEmpanadas">Seleccionar empanadas</span>
+                </label>
+                <label>
+                    <span data-translate="cantidad">Cantidad:</span>
+                    <input type="number" value="0" min="0" max="20">
+                </label>
+            </article>
+            <article>
+                <img src="./img/Ensalada-1.jpg" alt="Ensalada de mariscos"><br><br>
+                <h3 data-translate="ensaladaTitulo">Ensalada de mariscos</h3><br>
+                <p data-translate="ensaladaDesc">Ensalada de mariscos y calamares, una fusión fresca del océano en tu plato. Los jugosos calamares se entrelazan con una variedad de mariscos, bañados en aderezo ligero y adornados con vegetales frescos.</p><br>
+                <label>
+                    <input type="checkbox" name="ensalada_mariscos" value="3">
+                    <span data-translate="seleccionarEnsalada">Seleccionar ensalada de mariscos</span>
+                </label>
+                <label>
+                    <span data-translate="cantidad">Cantidad:</span>
+                    <input type="number" value="0" min="0" max="20">
+                </label>
+            </article>
+        </div>
+        
+        <a href="pedido.html" class="boton-flotante" data-translate="miPedido">Mi Pedido</a>
+    </main>
+    
+    <footer>© Todos los derechos reservados al Grupo 16</footer>
+    <script src="./js/traducciones.js"></script>
+</body>
+</html>

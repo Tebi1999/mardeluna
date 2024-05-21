@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mar de Luna</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="iconosidiomas">
+            <img src="./img/ico-spa.png" alt="Español" onclick="cambiarIdioma('es')">
+            <img src="./img/ico-bra.png" alt="Portugues" onclick="cambiarIdioma('pt')">
+            <img src="./img/ico-ita.png" alt="Italiano" onclick="cambiarIdioma('it')">
+            <img src="./img/ico-eng.png" alt="English" onclick="cambiarIdioma('en')">
+            <img src="./img/ico-deu.png" alt="Deutsch" onclick="cambiarIdioma('de')">
+            <img src="./img/ico-fre.png" alt="Français" onclick="cambiarIdioma('fr')">
+        </div>
+    
+        <nav class="barra">
+            <a href="./index.html"><img src="./img/isologotipo-transparente.png" alt="Isologotipo de la marca"></a>
+            <ul class="menu">
+                <li><a href="entradas.html" data-translate="entradas">ENTRADAS</a></li>
+                <li><a href="platos.html" data-translate="platos">PLATOS</a></li>
+                <li><a href="postres.html" data-translate="postres">POSTRES</a></li>
+                <li><a href="bebidas.html" data-translate="bebidas">BEBIDAS</a></li>
+                <li><a href="contacto.html" data-translate="contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 data-translate="welcomeTitle">Bienvenidos a Mar de Luna</h2>
+        <p data-translate="welcomeMessage">En Mar de Luna, nos enorgullece ofrecer una experiencia culinaria única, donde cada plato refleja nuestro
+            compromiso con la excelencia y el sabor auténtico del mar. Con una trayectoria arraigada en la pasión por la
+            cocina y el respeto por los ingredientes frescos y de calidad, hemos construido un legado que nos distingue en
+            el mundo gastronómico.</p>
+        <br>
+        <h3 data-translate="valuesTitle">Nuestros Valores:</h3>
+        <br>
+        <p data-translate="quality"><b>Calidad:</b> Nos esforzamos por ofrecer mariscos frescos y seleccionados con el más alto estándar de calidad en
+        cada uno de nuestros platos.</p>
+        <br>
+        <p data-translate="professionalism"><b>Profesionalismo:</b> Nuestro equipo está compuesto por expertos en el arte culinario, comprometidos con la
+        perfección en cada detalle y con la satisfacción de nuestros comensales.</p>
+        <br>
+        <p data-translate="tradition"><b>Tradición:</b> Con décadas de experiencia en la preparación de delicias marinas, honramos la tradición culinaria
+        y celebramos la riqueza de sabores que el mar nos ofrece.</p>
+        <br><br>
+        <p data-translate="experience">¡Bienvenidos a una experiencia gastronómica inolvidable en Mar de Luna!</p>
+        <br>
+        <div style="display: flex;">
+            <img src="./img/Cheff2.jpg" alt="Foto del Cheff" style="width: 30%; height: 30%; border-radius: 3%">
+            <p data-translate="chefMessage" style="padding-left: 2%; padding-right: 20%;">¡Hola! Soy Francis Gollum, el chef ejecutivo en Mar de Luna. Mi
+                pasión es crear experiencias culinarias que celebren los sabores del mar. ¡Únete a mí en un viaje
+                gastronómico donde cada plato cuenta una historia de frescura y creatividad!</p>
+        </div>
+        <br><br>
+    </main>
+    
+    <footer>© Todos los derechos reservados al Grupo 16</footer>
+
+    <script src="./js/traducciones.js"></script>
+</body>
+</html>

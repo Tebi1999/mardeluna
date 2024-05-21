@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mar de Luna</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="iconosidiomas">
+            <img src="./img/ico-spa.png" alt="Español" onclick="cambiarIdioma('es')">
+            <img src="./img/ico-bra.png" alt="Portugues" onclick="cambiarIdioma('pt')">
+            <img src="./img/ico-ita.png" alt="Italiano" onclick="cambiarIdioma('it')">
+            <img src="./img/ico-eng.png" alt="English" onclick="cambiarIdioma('en')">
+            <img src="./img/ico-deu.png" alt="Deutsch" onclick="cambiarIdioma('de')">
+            <img src="./img/ico-fre.png" alt="Français" onclick="cambiarIdioma('fr')">
+        </div>
+
+        <nav>
+            <a href="./index.html"><img src="./img/isologotipo-transparente.png" alt="Isologotipo de la marca"></a>
+            <ul class="menu">
+                <li><a href="index.html" data-translate="inicio">INICIO</a></li>
+                <li><a href="entradas.html" data-translate="entradas">ENTRADAS</a></li>
+                <li><a href="platos.html" data-translate="platos">PLATOS</a></li>
+                <li><a href="postres.html" data-translate="postres">POSTRES</a></li>
+                <li><a href="contacto.html" data-translate="contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <main>
+        <h2 data-translate="bebidasTitulo">BEBIDAS</h2>
+        <div class="bebidas">
+            <article>
+                <img src="./img/Limonada-1.jpg" alt="Limonada"><br><br>
+                <h3 data-translate="limonadaTitulo">Jarra de limonada</h3><br>
+                <p data-translate="limonadaDesc">Jarra de limonada x 1lt. con menta y jengibre, ideal para acompañar mariscos. Equilibra la acidez del limón con la frescura de la menta y el toque picante del jengibre.</p><br>
+                <label>
+                    <input type="checkbox" name="limonada" value="1">
+                    <span data-translate="seleccionarLimonada">Seleccionar limonada</span>
+                </label>
+                <label>
+                    <span data-translate="cantidad">Cantidad:</span>
+                    <input type="number" value="0" min="0" max="20">
+                </label>
+            </article>
+            <article>
+                <img src="./img/Vinoblanco-1.jpg" alt="Vino Blanco"><br><br>
+                <h3 data-translate="vinoBlancoTitulo">Vino Blanco</h3><br>
+                <p data-translate="vinoBlancoDesc">Vino blanco Chenin Blanc botella de 3/4 lt. Fresco y afrutado, perfecto para mariscos. Su carácter ligero y notas cítricas realzan los sabores del mar.</p>
+                <label><br>
+                    <input type="checkbox" name="vino_blanco" value="2">
+                    <span data-translate="seleccionarVinoBlanco">Seleccionar vino blanco</span>
+                </label>
+                <label>
+                    <span data-translate="cantidad">Cantidad:</span>
+                    <input type="number" value="0" min="0" max="20">
+                </label>
+            </article>
+            <article>
+                <img src="./img/Vinotinto-1.jpg" alt="Vino Tinto"><br><br>
+                <h3 data-translate="vinoTintoTitulo">Vino Tinto</h3><br>
+                <p data-translate="vinoTintoDesc">Vino tinto Malbec botella de 3/4 lt., con su cuerpo medio y taninos suaves, ofrece un contraste audaz pero equilibrado que complementan los sabores del mar.</p>
+                <label><br>
+                    <input type="checkbox" name="vino_tinto" value="3">
+                    <span data-translate="seleccionarVinoTinto">Seleccionar vino tinto</span>
+                </label>
+                <label>
+                    <span data-translate="cantidad">Cantidad:</span>
+                    <input type="number" value="0" min="0" max="20">
+                </label>
+            </article>
+        </div>
+        <a href="pedido.html" class="boton-flotante" data-translate="miPedido">Mi Pedido</a>
+    </main>
+    
+    <br><br>
+    <footer>© Todos los derechos reservados al Grupo 16</footer>
+
+    <script src="./js/traducciones.js"></script>
+</body>
+</html>

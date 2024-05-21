@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mar de Luna</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="iconosidiomas">
+            <img src="./img/ico-spa.png" alt="Español" onclick="cambiarIdioma('es')">
+            <img src="./img/ico-bra.png" alt="Português" onclick="cambiarIdioma('pt')">
+            <img src="./img/ico-ita.png" alt="Italiano" onclick="cambiarIdioma('it')">
+            <img src="./img/ico-eng.png" alt="English" onclick="cambiarIdioma('en')">
+            <img src="./img/ico-deu.png" alt="Deutsch" onclick="cambiarIdioma('de')">
+            <img src="./img/ico-fre.png" alt="Français" onclick="cambiarIdioma('fr')">
+        </div>
+        
+        <nav>
+            <a href="./index.html"><img src="./img/isologotipo-transparente.png" alt="Isologotipo de la marca"></a>
+
+            <ul class="menu">
+                <li><a href="index.html" data-translate="inicio">INICIO</a></li>
+                <li><a href="entradas.html" data-translate="entradas">ENTRADAS</a></li>
+                <li><a href="platos.html" data-translate="platos">PLATOS</a></li>
+                <li><a href="bebidas.html" data-translate="bebidas">BEBIDAS</a></li>
+                <li><a href="contacto.html" data-translate="contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <H2 data-translate="postresTitulo">POSTRES</H2>
+        <div class="postres">
+            <article>
+                <img src="./img/Tiramisu-1.jpg" alt="Tiramisu">
+                <h3 data-translate="tiramisuTitulo">Tiramisu</h3><br>
+                <p data-translate="tiramisuDesc">Un clásico italiano, indulgente y reconfortante. Capas de bizcochuelo empapados en café, alternadas con una mezcla cremosa de mascarpone, huevos y coronado con cacao en polvo.</p><br>
+                <label>
+                    <input type="checkbox" name="tiramisu" value="1">
+                    <span data-translate="seleccionarTiramisu">Seleccionar tiramisu</span>
+                </label>
+                <label>
+                    <span data-translate="cantidad">Cantidad:</span>
+                    <input type="number" value="0" min="0" max="20">
+                </label>
+            </article>
+            <article>
+                <img src="./img/Higos-1.jpg" alt="Higos en almíbar">
+                <h3 data-translate="higosTitulo">Higos en almíbar</h3><br>
+                <p data-translate="higosDesc">Higos en almíbar suave y aromático, que resalta su sabor natural y los hace aún más indulgentes. Perfectos como postre o acompañamiento.</p><br>
+                <label>
+                    <input type="checkbox" name="higos_en_almibar" value="2">
+                    <span data-translate="seleccionarHigos">Seleccionar higos en almíbar</span>
+                </label>
+                <label>
+                    <span data-translate="cantidad">Cantidad:</span>
+                    <input type="number" value="0" min="0" max="20">
+                </label>
+            </article>
+            <article>
+                <img src="./img/Brownie-1.jpg" alt="Brownie con crema">
+                <h3 data-translate="brownieTitulo">Brownie con crema</h3><br>
+                    <p data-translate="brownieDesc">Un tentador corazón de chocolate decadente y una textura densa y suave. Coronado con una generosa porción de helado de crema sobre el brownie tibio, creando una combinación perfecta.</p><br>
+                    <label>
+                        <input type="checkbox" name="brownie" value="3">
+                        <span data-translate="seleccionarBrownie">Seleccionar brownie con crema</span>
+                    </label>
+                    <label>
+                        <span data-translate="cantidad">Cantidad:</span>
+                        <input type="number" value="0" min="0" max="20">
+                    </label>
+                </article>
+            </div>
+            
+            <a href="pedido.html" class="boton-flotante" data-translate="miPedido">Mi Pedido</a>
+    
+        </main>
+        <br><br>
+        <footer> © Todos los derechos reservados al Grupo 16</footer>
+    
+        <script src="./js/traducciones.js"></script>
+    </body>
+    </html>
+    
